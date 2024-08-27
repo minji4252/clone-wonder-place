@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>(주)원더플레이스 - Clone 코드</title>
+    <link rel="canonical" href="https://www.wonderplace.com" />
+    <meta property="og:url" content="https://www.wonderplace.com" />
+    <meta property="og:title" content="(주)원더플레이스" />
+    <meta
+      property="og:description"
+      content="(주)원더플레이스 쇼핑몰 | BRAND, BEST, NEW, WOMEN, MEN, ACC, LAST IT, W.rating"
+    />
+    <meta property="og:site_name" content="(주)원더플레이스" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.wonderplace.com/web/upload/share-image-2-b835a018b9820fd795f2f3dc9192f59a.png"
+    />
+    <meta name="path_role" content="MAIN" />
+    <meta name="author" content="(주)원더플레이스" />
+    <meta
+      name="description"
+      content="(주)원더플레이스 쇼핑몰 | BRAND, BEST, NEW, WOMEN, MEN, ACC, LAST IT, W.rating"
+    />
+    <meta name="keywords" content="(주)원더플레이스" />
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- AOS.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 안내창 -->
+    <div class="modal-wrap">
+      <!-- Modal 내용 -->
+      <div class="modal-main">
+        <div class="modal-txt">
+          해당 사이트는 스터디용으로 제작되었으며, 모든 리소스의 저작권은
+          원저작자에게 있습니다. <br />
+          * 본 사이트는 Chrome 에 최적화되어 있습니다. <br />
+          * 해당 사이트와 관련한 문제가 있으면
+          <a href="mailto:alswl1364@naver.com">alswl1364@naver.com</a>로
+          연락바랍니다
+        </div>
+        <!-- Modal 닫기 버튼 -->
+        <button class="modal-close">X</button>
+      </div>
+    </div>
+    <!-- 고정메뉴 -->
+    <button class="gotop">Top</button>
+    <div class="gosns">
+      <ul class="gnb-mb-sns">
+        <li><a href="#" class="i-fb">fb</a></li>
+        <li><a href="#" class="i-is">insta</a></li>
+        <li><a href="#" class="i-yt">yt</a></li>
+      </ul>
+    </div>
+    <!--// 고정메뉴 -->
+    <div class="wrap">
+      <!-- 상단 -->
+      <header class="header">
+        <div class="inner">
+          <a href="#" class="logo">
+            <img src="images/logo.svg" alt="" />
+          </a>
+          <nav class="nav">
+            <ul class="gnb">
+              <li>
+                <a href="#"><span>COMPANY</span></a>
+              </li>
+              <li>
+                <a href="#"><span>RECRUIT</span></a>
+              </li>
+              <li>
+                <a href="#"><span>BRAND</span></a>
+              </li>
+              <li>
+                <a href="#"><span>SHOP</span></a>
+              </li>
+              <li>
+                <a href="#"><span>CONTACT</span></a>
+              </li>
+            </ul>
+            <button class="nav-mb">
+              <i>
+                <span></span>
+              </i>
+            </button>
+          </nav>
+        </div>
+        <!-- 모바일 메뉴 -->
+        <div class="mb-wrap">
+          <div class="mb-inner">
+            <ul class="gnb-mb">
+              <li>
+                <a href="#"><span>COMPANY</span></a>
+              </li>
+              <li>
+                <a href="#"><span>RECRUIT</span></a>
+              </li>
+              <li>
+                <a href="#"><span>BRAND</span></a>
+              </li>
+              <li>
+                <a href="#"><span>SHOP</span></a>
+              </li>
+              <li>
+                <a href="#"><span>CONTACT</span></a>
+              </li>
+            </ul>
+            <div class="gnb-mb-etc">
+              <p class="gnb-mb-txt">
+                <span>NO.1</span>
+                <span>패션 라이프 스타일 편집숍</span>
+                <b>원더플레이스</b>
+              </p>
+              <ul class="gnb-mb-sns">
+                <li><a href="#" class="i-fb">fb</a></li>
+                <li><a href="#" class="i-is">insta</a></li>
+                <li><a href="#" class="i-yt">yt</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- 비주얼 -->
+      <section class="visual">
+        <div class="inner">
+          <ul class="sw-visual-control">
+            <!-- <li class="active">01</li>
+            <li>02</li>
+            <li>03</li> -->
+          </ul>
+          <div class="visual-wrap">
+            <h2>
+              NO.1<br />
+              패션라이프 스타일 편집숍
+            </h2>
+            <h3>원더플레이스</h3>
+
+            <p>
+              <b>A PLACE OF WONDER</b>
+              원더플레이스는 놀라움이 가득한 장소 A PLACE OF WONDER 라는 의미로
+              다양한 패션+라이프를 담은 편집을 통해 차별화된 스타일링과 룩을
+              지향하는 패션 라이프 스타일 편집숍입니다.
+            </p>
+
+            <div class="sw-visual-nav">
+              <button class="sw-visual-prev">이전</button>
+              <button class="sw-visual-next">다음</button>
+            </div>
+          </div>
+        </div>
+        <!-- 비주얼 Swiper -->
+        <div class="swVisual-wrap">
+          <div class="swiper swVisual">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="v-bg-1 v-box"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="v-bg-2 v-box"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="v-bg-3 v-box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 소개 -->
+      <section class="about">
+        <div class="inner">
+          <div class="about-left">
+            <span>ABOUT</span>
+            <h2>
+              MAKE FUN PLACE <br />
+              WONDER PLACE
+            </h2>
+            <p>
+              국내외 'UP & COMING' 브랜드, 'FRESH & UNIQUE' 신진 디자이너
+              레이블, 'TRENDY & SEASONAL ESSENTIAL' 패션 제품 등 다양한 'FASHION
+              TO LIFESTYLE' 아이템을 함께 구성하여 보다 새로운 즐거움을 줄 수
+              있는 공간을 추구 합니다.
+            </p>
+            <a href="#"> <em>MORE</em> </a>
+          </div>
+          <div class="about-right">
+            <img src="images/pic_about1.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- 텍스트 효과 -->
+      <section class="effect">
+        <div class="effect-01">A PLACE OF WONDER A PLACE OF WONDER</div>
+        <div class="effect-02">A PLACE OF WONDER A PLACE OF WONDER</div>
+      </section>
+      <!-- 브랜드 -->
+      <section class="brand">
+        <div class="inner">
+          <div class="brand-cate">BRAND</div>
+          <div class="brand-left">
+            <h2>
+              WONDER PLACE <br />
+              BRANDS
+            </h2>
+          </div>
+          <div class="brand-right">
+            <p>
+              우리는, 원더플레이스만의 새로운 시각으로 패션 브랜드 전개 및
+              새로운 콘텐츠와 지속 가능한 브랜드 가치를 제공합니다. 우리는,
+              패션을 통해 고객이 원하는 상품을, 고객이 원하는 시간과 장소에서
+              고객이 만족하는 합리적인 가격으로, 고객의 더 높은 만족을 위하여
+              즐겁고 합리적인 소비생활에 기여합니다.
+            </p>
+          </div>
+        </div>
+        <div class="swBrandWrap" data-aos="fade-in" data-aos-offset="200">
+          <div class="swiper swBrand">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swBrand-good swBrand-good-1">
+                  <div class="swBrand-good-wrap">
+                    <span>HERITAGE AND LIFE STYLE CASUAL WEAR</span>
+                    <h3>골라</h3>
+                    <p>
+                      골라는 1905년 영국 레스터 지방에서 탄생한 골라 클래식은<br />영국
+                      헤리티지와 라이프스타일을 담은 브랜드입니다.
+                    </p>
+                    <a>MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swBrand-good swBrand-good-2">
+                  <div class="swBrand-good-wrap">
+                    <span>UNISEX DAILY CASUALWEAR</span>
+                    <h3>꼬모니노즈</h3>
+                    <p>
+                      꼬모니노즈는 ‘EASY & COZY ’라는 슬로건과 함께 <br />
+                      단순함 속에서도 작은 즐거움을 찾을 수 있는 옷을 만드는
+                      브랜드입니다.
+                    </p>
+                    <a>MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swBrand-good swBrand-good-3">
+                  <div class="swBrand-good-wrap">
+                    <span>SIMPLE IS BEST THINGS</span>
+                    <h3>더블유스탠다드</h3>
+                    <p>
+                      일상에서 입는 즐거움을 찾을 수 있도록, 새롭게 변화하는
+                      트렌드 아이템을<br />다양한 이들이 쉽게 접근할 수 있게
+                      풀어내는 캐주얼웨어 브랜드입니다.
+                    </p>
+                    <a>MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swBrand-good swBrand-good-4">
+                  <div class="swBrand-good-wrap">
+                    <span>OUR ANGELA WISHES YOUR HAPPINESS</span>
+                    <h3>델리센트</h3>
+                    <p>
+                      델리센트는 사랑스러운 당신을 위한 모든 것을 만드는<br />행운을
+                      전달하는 전도사 “ANGELA”가 꿈꾸는 러블리 감성
+                      브랜드입니다.
+                    </p>
+                    <a>MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swBrand-good swBrand-good-5">
+                  <div class="swBrand-good-wrap">
+                    <span>OUTDOOR PRODUCTS</span>
+                    <h3>아웃도어 프로덕츠</h3>
+                    <p>
+                      Altshule brothers가 1973년에 설립하였으며, 장소와 계절에
+                      관계없이 편안함과<br />
+                      새로운 변화를 추구하는 21세기 라이프스타일
+                      브랜드입니다.<br />
+                      OUTDOOR PRODUCTS는 일상생활에 필요한 베이직한 요소를
+                      기반으로 <br />
+                      실용적이고 기능적인 디테일을 접목한 클래식한 아이템을
+                      제공하는 브랜드입니다.
+                    </p>
+                    <a>MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swBrand-good swBrand-good-6">
+                  <div class="swBrand-good-wrap">
+                    <span>CITY LIFE FROM THE OCEAN</span>
+                    <h3>오션퍼시픽</h3>
+                    <p>
+                      시작으로 현재는 서프 컬처를 비롯한 시티&비치
+                      라이프스타일을
+                      <br />스트릿으로 옮긴 다양한 스타일을 선보이고 있는
+                      브랜드입니다.
+                    </p>
+                    <a>MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swBrand-good swBrand-good-7">
+                  <div class="swBrand-good-wrap">
+                    <span>BE HAPPY ORDINARY DAY</span>
+                    <h3>오디너리홀리데이</h3>
+                    <p>
+                      “YOUNG VIBE”를 컨셉으로 다양한 가치관과<br />문화 속에서
+                      살고 있는 그들의 문화를 상품으로 재해석한 브랜드입니다.
+                    </p>
+                    <a>MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swBrand-good swBrand-good-8">
+                  <div class="swBrand-good-wrap">
+                    <span>COMFORT, EASY TO WEAR</span>
+                    <h3>필드워커</h3>
+                    <p>
+                      모티브로 '오늘의 아웃핏을 완성시키는 데님의 역할'을 위해
+                      COMFORT,<br />
+                      EASY TO WEAR 그리고 QUALITY의 가치를 추구하는 데님 웨어
+                      브랜드입니다.
+                    </p>
+                    <a>MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- swBrand 메뉴 -->
+          <ul class="swBrandMenu">
+            <li class="active"><a href="#">GOLA</a></li>
+            <li><a href="#">COMONINOZ</a></li>
+            <li><a href="#">W.STANDARD</a></li>
+            <li><a href="#">DELICCENT</a></li>
+            <li><a href="#">OUTDOOR PRODUCTS</a></li>
+            <li><a href="#">OCEAN PACIFIC</a></li>
+            <li><a href="#">ORDINARY HOLIDAY</a></li>
+            <li><a href="#">FIELD WORKER</a></li>
+          </ul>
+          <!-- swBrand Pagination -->
+          <div class="swBrand-pg"></div>
+        </div>
+      </section>
+      <!-- 회사위치 -->
+      <section class="location">
+        <div class="inner">
+          <div class="location-title">
+            <span>CONTACT</span>
+            <h3>
+              고객의 <br />
+              패션 라이프를 책임질 <br />
+              원더플레이스와 함께 <br />
+            </h3>
+          </div>
+          <div class="location-map">
+            <img src="images/map.png" alt="" />
+          </div>
+          <div class="location-addr">
+            서울 성동구 성수일로6길 33 <br />
+            (성수동2가) 아연디지털타워 5층 <br />
+            서울 성동구 성수일로6길 33 <br />
+            <a href="mailto:#">help@wonderplace.co.kr</a>
+          </div>
+          <a class="location-kko" href="#">KAKAO MAP</a>
+        </div>
+      </section>
+      <!-- 하단 -->
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-sns">
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">instagram</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+          <div class="footer-copy">
+            COPYRIGHT
+            <strong>© WONDERPLACEALL </strong>
+            RIGHTS RESERVED.
+          </div>
+          <div class="footer-address">
+            <dl>
+              <dt>TEL</dt>
+              <dd><a href="tel:">1668-3508</a></dd>
+              <dt>E-MAIL</dt>
+              <dd><a href="mailto:">help@wonderplace.co.kr</a></dd>
+              <dt>ADDRESS</dt>
+              <dd>
+                <address>
+                  04782 서울특별시 성동구 성수일로6길 33 (성수동2가)
+                  아연디지털타워 5층
+                </address>
+              </dd>
+            </dl>
+          </div>
+          <div class="footer-info">
+            <a href="#">개인정보처리방침</a>
+            <span>대표이사 : 김영한</span>
+            <span>사업자 등록번호 : 201-86-20597</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
